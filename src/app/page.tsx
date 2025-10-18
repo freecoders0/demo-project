@@ -90,8 +90,7 @@ export default function Home() {
               className="max-w-[40%] "
               src="./WhatsApp_Image_2025-10-17_at_7.58.24_PM-removebg-preview.png"
               alt=""
-              srcset=""
-            />
+            ></img>
           </h2>
           <h2 className="text-[#FDDD04] text-3xl font-bold">আমাদের সম্পর্কে</h2>
           <p className="text-[#FDDD04] ">

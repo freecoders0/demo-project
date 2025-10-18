@@ -1,5 +1,7 @@
-import type { Metadata } from "next";
+"use client"; // Make this a Client Component
+
 import { Geist, Geist_Mono } from "next/font/google";
+import { useEffect, useState } from "react";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,20 +14,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Demo Project",
-  description: "",
-};
-
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  const [clientReady, setClientReady] = useState(false);
+
+  // Only apply dynamic classes after hydration
+  useEffect(() => {
+    setClientReady(true);
+  }, []);
+
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={
+          clientReady
+            ? `${geistSans.variable} ${geistMono.variable} antialiased`
+            : "antialiased" // fallback for SSR
+        }
       >
         {children}
       </body>
