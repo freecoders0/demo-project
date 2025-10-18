@@ -40,7 +40,7 @@ export default function Home() {
             <div className="">
               <img
                 className="max-w-[30%] "
-                src="./WhatsApp_Image_2025-10-17_at_7.58.24_PM-removebg-preview.png"
+                src=".///WhatsApp_Image_2025-10-17_at_7.58.24_PM-removebg-preview.png"
                 alt=""
               />
             </div>
