@@ -39,7 +39,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="">
               <img
-                className="max-w-[30%] "
+                className="max-w-[50%] flex justify-center "
                 src=".///WhatsApp_Image_2025-10-17_at_7.58.24_PM-removebg-preview.png"
                 alt=""
               />
@@ -93,14 +93,14 @@ export default function Home() {
             ></img>
           </h2>
           <h2 className="text-[#FDDD04] text-3xl font-bold">আমাদের সম্পর্কে</h2>
-          <p className="text-[#FDDD04] ">
+          <p className="text-[#FDDD04] mb-4 ">
             বাংলাদেশে Josh365-এর একমাত্র অনুমোদিত প্রতিনিধি হিসেবে আমরা আপনাদের
             জন্য নিরাপদ, দ্রুত এবং নির্ভরযোগ্য পরিষেবা প্রদানে অঙ্গীকারবদ্ধ
             <br />
           </p>
         </aside>
-        <nav className="flex-1">
-          <h6 className="block footer-title text-[#FDDD04] font-bold md:text-1xl">
+        <nav className="flex-1 mt-2 md:mt-5">
+          <h6 className="block footer-title text-[#FDDD04] font-bold md:text-1xl ">
             নতুন একাউন্ট খুলুন
           </h6>
           <h6 className="block link link-hover text-[#FDDD04] font-bold md:text-1xl mt-1">
@@ -108,7 +108,7 @@ export default function Home() {
           </h6>
         </nav>
 
-        <nav className="flex-1">
+        <nav className="flex-1 mt-2 md:mt-5">
           <h6 className="block footer-title text-[#FDDD04] font-bold md:text-1xl">
             মাস্টার এজেন্ট
           </h6>
